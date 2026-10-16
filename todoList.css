@@ -76,3 +76,45 @@ h1 {
   border-radius:20px;
   font-family:'Franklin Gothic Medium';
 }
+
+@media screen and (max-width: 580px) {
+    .app {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .todo-grid,
+    .todo-input-grid {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr);
+        column-gap: 5px;
+        row-gap: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .name-input,
+    .date-input {
+        width: 100%;
+        min-width: 0;
+        padding: 8px;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+
+    .todo-grid{
+      font-size:0.8em;
+    }
+
+    .delete-todo-btn {
+      padding:4px;
+      font-size:14px;
+    }
+}
